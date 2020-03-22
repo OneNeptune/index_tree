@@ -1,4 +1,4 @@
-class CreateIndexTreeIndexNodes < ActiveRecord::Migration[4.2]
+class CreateIndexTreeIndexNodes < ActiveRecord::Migration[6.0]
   def change
     create_table :index_tree_index_nodes, id: :uuid do |t|
       t.uuid :root_element_id, :null => false
